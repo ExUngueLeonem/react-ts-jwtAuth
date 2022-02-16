@@ -17,7 +17,6 @@ ReactDOM.render(
   <Context.Provider value={{
     store
   }}>
-
     <App />
   </Context.Provider>,
   document.getElementById('root')
