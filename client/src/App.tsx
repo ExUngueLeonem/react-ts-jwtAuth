@@ -36,8 +36,6 @@ const App: FC = () => {
     )
   }
 
-  console.log('Активация', store.user.isActivated)
-
   return (
     <div>
 
