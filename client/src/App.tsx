@@ -36,11 +36,13 @@ const App: FC = () => {
     )
   }
 
+  console.log('Активация', store.user.isActivated)
+
   return (
     <div>
 
       <h1>{store.isAuth ? `Пользователь авторизован ${store.user.email}` : 'Пользователь не авторизован'}</h1>
-      <h1>{store.user.isActivate ? 'Аккаунт активирован' : 'Аккаунт не активирован'}</h1>
+      <h1>{store.user.isActivated ? 'Аккаунт активирован' : 'Аккаунт не активирован'}</h1>
       <button onClick={() => store.logout()}>Выйти</button>
       <div>
         <button onClick={getUsers}>Получить пользователей</button>
